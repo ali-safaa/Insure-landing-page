@@ -117,17 +117,21 @@ ul li {
 }
 
 .skills .skill {
-     padding-right: 40px;
+     margin-right: 40px;
+     display: grid;
+     align-items: center;
 }
 
 .skill svg {
      padding-bottom: 30px;
+     margin: 0 auto;
 }
 
 .skill h3 {
      font-size: 25px;
      font-weight: 400;
      font-family: "DM Serif Display", serif;
+     text-align: center;
 }
 .skill p {
      width: 400px;
@@ -173,4 +177,55 @@ ul li {
      position: absolute;
      top: 0;
      right: 0;
+}
+
+footer {
+     background-color: #f5f5f5;
+     display: grid;
+     align-items: center;
+     margin: 0 auto;
+}
+
+footer > .logo-and-social {
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid #b5b0b0;
+     justify-content: space-between;
+     padding: 30px 40px;
+}
+
+.social-media {
+     display: flex;
+     align-items: center;
+}
+.social-media > svg {
+     padding-right: 10px;
+     width: 30px;
+}
+
+.aboutUs {
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     text-transform: uppercase;
+     margin-top: 30px;
+}
+
+.about {
+     margin-right: 200px;
+}
+
+.about h4 {
+     color: gray;
+     margin-bottom: 30px;
+}
+
+.about h5 {
+     color: rgb(34, 34, 49);
+     margin-bottom: 20px;
+}
+
+.attribution {
+     margin: 20px auto;
+     color: gray;
 }
