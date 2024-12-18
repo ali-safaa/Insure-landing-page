@@ -14,7 +14,7 @@ header {
      z-index: 1;
 }
 
-nav > ul {
+.nav-desktop > ul {
      list-style: none;
      display: flex;
      align-items: center;
@@ -35,6 +35,14 @@ ul li {
      color: gray;
      text-transform: uppercase;
      padding-right: 20px;
+}
+
+.nav-mobile {
+     display: none;
+}
+
+.hamburger-icon {
+     display: none;
 }
 
 .banner {
@@ -228,4 +236,38 @@ footer > .logo-and-social {
 .attribution {
      margin: 20px auto;
      color: gray;
+}
+
+@media (min-width: 320px) and (max-width: 839px) {
+     .nav-desktop {
+          display: none;
+     }
+     .hamburger-icon {
+          display: block;
+     }
+
+     .nav-mobile {
+          background-color: rgb(71, 71, 71);
+          width: 100%;
+          max-width: 600px;
+          border: 1px solid blue;
+          position: fixed;
+          top: 110px;
+          display: block;
+          padding: 30px 0;
+     }
+
+     ul {
+          list-style: none;
+     }
+
+     ul li {
+          color: white;
+          text-align: center;
+          margin-bottom: 20px;
+     }
+
+     ul > li:hover {
+          border: 1px solid white;
+     }
 }
