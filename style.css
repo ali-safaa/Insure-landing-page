@@ -74,15 +74,16 @@ ul li {
      color: white;
      font-weight: 700;
      padding-bottom: 30px;
-     font-size: 65px;
-     width: 500px;
+     font-size: clamp(40px, 5vw, 70px);
+     width: 100%;
+     max-width: 600px;
 }
 
 .bigTitle-intro > p {
      color: rgb(184, 182, 182);
      line-height: 1.5;
-     padding-bottom: 30px;
-     width: 500px;
+     margin-bottom: 30px;
+     max-width: 500px;
 }
 
 .bigTitle-intro > button {
@@ -112,7 +113,7 @@ ul li {
 }
 
 .feedContainer > h2 {
-     font-size: 70px;
+     font-size: clamp(40px, 5vw, 70px);
      font-weight: 500;
      padding-bottom: 60px;
      color: #252121;
@@ -153,26 +154,26 @@ ul li {
      align-items: center;
      background-color: rgb(37, 37, 48);
      padding: 40px 50px;
-     width: fit-content;
      justify-content: space-between;
      margin: 80px auto;
      position: relative;
+     max-width: 1100px;
 }
 
 .findout > h2 {
      font-size: 50px;
      font-weight: 500;
      color: white;
-     width: 500px;
      font-family: "DM Serif Display", serif;
      margin-right: 400px;
+     width: 100%;
+     max-width: 500px;
 }
 
 .findout > button {
      background-color: transparent;
      border: 2px solid white;
      padding: 10px 20px;
-     width: fit-content;
      color: white;
      z-index: 1;
 }
@@ -239,6 +240,10 @@ footer > .logo-and-social {
 }
 
 @media (min-width: 320px) and (max-width: 839px) {
+     header {
+          padding: 30px 20px;
+     }
+
      .nav-desktop {
           display: none;
      }
@@ -255,6 +260,7 @@ footer > .logo-and-social {
           top: 110px;
           display: block;
           padding: 30px 0;
+          display: none;
      }
 
      ul {
@@ -269,5 +275,63 @@ footer > .logo-and-social {
 
      ul > li:hover {
           border: 1px solid white;
+     }
+
+     .banner {
+          flex-direction: column-reverse;
+          padding: 0;
+          max-width: 100%;
+     }
+
+     .bigTitle-intro {
+          padding: 0;
+     }
+
+     .bigTitle-intro > h1 {
+          margin-top: 30px;
+          margin-left: 20px;
+     }
+
+     .bigTitle-intro > p {
+          margin: 0 20px;
+          margin-bottom: 30px;
+     }
+
+     .bigTitle-intro > button {
+          margin: 0 auto;
+          margin-bottom: 30px;
+     }
+
+     .banner > img {
+          position: relative;
+          top: 0;
+          left: 0;
+          max-width: 100%;
+          height: auto;
+     }
+
+     .feedContainer {
+          margin-top: 100px;
+     }
+
+     .feedContainer > h2 {
+          text-align: center;
+     }
+
+     .skills {
+          display: grid;
+     }
+
+     .skills > .skill {
+          margin-right: 0;
+          margin-bottom: 30px;
+     }
+
+     .findout {
+          display: grid;
+     }
+
+     .findout > h2 {
+          font-size: clamp(30px, 5vw, 70px);
      }
 }
