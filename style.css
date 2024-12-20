@@ -50,6 +50,7 @@ ul li {
      align-items: center;
      background-color: rgb(37, 37, 48);
      padding-left: 245px;
+     justify-content: space-around;
 }
 
 .banner > .introLeft {
@@ -100,9 +101,10 @@ ul li {
 }
 
 .banner > img {
-     position: relative;
-     top: 130px;
-     left: 250px;
+     width: 100%;
+     max-width: 400px;
+     height: auto;
+     padding: 80px 0;
 }
 
 .feedContainer {
@@ -143,7 +145,7 @@ ul li {
      text-align: center;
 }
 .skill p {
-     width: 400px;
+     max-width: 400px;
      padding-top: 20px;
      line-height: 1.5;
      color: gray;
@@ -161,7 +163,7 @@ ul li {
 }
 
 .findout > h2 {
-     font-size: 50px;
+     font-size: clamp(25px, 5vw, 50px);
      font-weight: 500;
      color: white;
      font-family: "DM Serif Display", serif;
@@ -192,7 +194,7 @@ footer {
      background-color: #f5f5f5;
      display: grid;
      align-items: center;
-     margin: 0 auto;
+     /* margin: 0 auto; */
 }
 
 footer > .logo-and-social {
@@ -218,10 +220,14 @@ footer > .logo-and-social {
      justify-content: center;
      text-transform: uppercase;
      margin-top: 30px;
+     flex-wrap: wrap;
+     width: 100%;
 }
 
 .about {
-     margin-right: 200px;
+     /* margin-right: 200px; */
+     width: 100%;
+     max-width: 200px;
 }
 
 .about h4 {
@@ -302,14 +308,6 @@ footer > .logo-and-social {
           margin-bottom: 30px;
      }
 
-     .banner > img {
-          position: relative;
-          top: 0;
-          left: 0;
-          max-width: 100%;
-          height: auto;
-     }
-
      .feedContainer {
           margin-top: 100px;
      }
@@ -332,6 +330,28 @@ footer > .logo-and-social {
      }
 
      .findout > h2 {
-          font-size: clamp(30px, 5vw, 70px);
+          margin: 0;
+     }
+
+     .findout > button {
+          margin: 20px auto;
+          max-width: fit-content;
+     }
+
+     footer > .logo-and-social {
+          flex-direction: column;
+          padding: 30px 0;
+     }
+
+     .social-media {
+          margin-top: 20px;
+     }
+
+     .about > h4 {
+          text-align: center;
+     }
+
+     .about > h5 {
+          text-align: center;
      }
 }
