@@ -4,6 +4,10 @@
      font-family: "Karla", sans-serif;
 }
 
+:root {
+     --show-icon: none;
+}
+
 header {
      display: flex;
      align-items: center;
@@ -37,12 +41,16 @@ ul li {
      padding-right: 20px;
 }
 
+ul li:hover {
+     border: 1px solid black;
+}
+
 .nav-mobile {
      display: none;
 }
 
 .hamburger-icon {
-     display: none;
+     display: var(--show-icon);
 }
 
 .banner {
@@ -254,7 +262,11 @@ footer > .logo-and-social {
           display: none;
      }
      .hamburger-icon {
-          display: block;
+          display: var(--show-icon);
+     }
+
+     .close-icon {
+          display: none;
      }
 
      .nav-mobile {
@@ -263,10 +275,11 @@ footer > .logo-and-social {
           max-width: 600px;
           border: 1px solid blue;
           position: fixed;
-          top: 110px;
-          display: block;
-          padding: 30px 0;
+          top: 20%;
+          left: 50%;
           display: none;
+          padding: 10px 0;
+          transform: translate(-50%, -50%);
      }
 
      ul {
@@ -275,11 +288,11 @@ footer > .logo-and-social {
 
      ul li {
           color: white;
-          text-align: center;
-          margin-bottom: 20px;
+          width: fit-content;
+          margin: 20px auto;
      }
 
-     ul > li:hover {
+     .nav-mobile > ul li:hover {
           border: 1px solid white;
      }
 

@@ -48,6 +48,7 @@
                     </ul>
                </nav>
                <svg
+                    data-hamburger-icon
                     class="hamburger-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -67,7 +68,32 @@
                          </g>
                     </g>
                </svg>
-               <nav class="nav-mobile">
+
+               <svg
+                    data-close-icon
+                    class="close-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+               >
+                    <g fill="none" fill-rule="evenodd">
+                         <path
+                              fill="#FFF"
+                              stroke="#2C2830"
+                              stroke-width="1.5"
+                              d="M.75.75h30.5v30.5H.75z"
+                         />
+                         <g fill="#2C2830">
+                              <path
+                                   d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z"
+                              />
+                              <path
+                                   d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z"
+                              />
+                         </g>
+                    </g>
+               </svg>
+               <nav data-nav-mobile class="nav-mobile">
                     <ul>
                          <li>How we work</li>
                          <li>Blog</li>
@@ -333,5 +359,7 @@
                     <a href="https://github.com/ali-safaa">Ali Safaa</a>.
                </div>
           </footer>
+
+          <script src="script.js"></script>
      </body>
 </html>
