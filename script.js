@@ -4,14 +4,16 @@ const close_icon = document.querySelector("[data-close-icon]");
 
 hamburger_icon.addEventListener("click", () => {
      nav_mobile.style.display = "block";
-     const hidding = (hamburger_icon.style.display = "none");
-     hamburger_icon.style.setProperty("--show-icon", hidding);
-     close_icon.style.display = "block";
+     hamburger_icon.style.display = "none";
+     if (window.innerWidth <= 840) {
+          close_icon.style.display = "block";
+     }
 });
 
 close_icon.addEventListener("click", () => {
      nav_mobile.style.display = "none";
-     const showing = (hamburger_icon.style.display = "block");
-     hamburger_icon.style.setProperty("--show-icon", showing);
+     if (window.innerWidth <= 840) {
+          hamburger_icon.style.display = "block";
+     }
      close_icon.style.display = "none";
 });

@@ -4,10 +4,6 @@
      font-family: "Karla", sans-serif;
 }
 
-:root {
-     --show-icon: none;
-}
-
 header {
      display: flex;
      align-items: center;
@@ -50,7 +46,11 @@ ul li:hover {
 }
 
 .hamburger-icon {
-     display: var(--show-icon);
+     display: none;
+}
+
+.close-icon {
+     display: none;
 }
 
 .banner {
@@ -262,7 +262,7 @@ footer > .logo-and-social {
           display: none;
      }
      .hamburger-icon {
-          display: var(--show-icon);
+          display: block;
      }
 
      .close-icon {
