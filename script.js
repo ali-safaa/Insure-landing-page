@@ -1,6 +1,7 @@
 const nav_mobile = document.querySelector("[data-nav-mobile]");
 const hamburger_icon = document.querySelector("[data-hamburger-icon]");
 const close_icon = document.querySelector("[data-close-icon]");
+const header = document.querySelector("[data-header]");
 
 hamburger_icon.addEventListener("click", () => {
      nav_mobile.style.display = "block";
